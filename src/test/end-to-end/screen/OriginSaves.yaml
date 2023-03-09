@@ -1,0 +1,5 @@
+fieldFirst:
+    XpathValue:   xpath=//*[@id="root"]/div[2]/div/div[2]/div[1]/div/div/input
+
+textValues:
+    valueAssert:   12.12
