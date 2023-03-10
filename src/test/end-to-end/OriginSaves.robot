@@ -5,7 +5,17 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 
-Savings
-    [Tags]    @test
-    Given access saving goal plan
-    And Set Total Amount
+Savings in three months
+    Given Access saving goal plan
+    When Set amount
+    Then Reach Goal By
+
+Do not allow to set previous month
+    Given Access saving goal plan
+    When Try to input previous month
+    Then Current month should be present
+
+Validting letters on money field
+    Given Access saving goal plan
+    When Try to set letters to money
+    Then Monthy amount will be zero
