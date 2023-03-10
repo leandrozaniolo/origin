@@ -22,6 +22,7 @@ Reach goal by
     Press Keys                              ${arrows.rightPressing}         ARROW_RIGHT
     Wait Until Page Contains                ${textValues.valueMonth}
     Wait Until Page Contains                ${textValues.valueThree}        ${GENERAL_TIMEOUT}
+    Click Button                            ${pageElement.button}
 
 Try to set letters to money
     Wait Until Element Is Visible           ${pageElement.totalAmountField}

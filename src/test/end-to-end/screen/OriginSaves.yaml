@@ -16,3 +16,4 @@ arrows:
 
 pageElement:
     totalAmountField: //*[@id="root"]/div[2]/div/div[2]/div[1]/div/div
+    button: //*[@id="root"]/div[2]/div/div[4]/button
