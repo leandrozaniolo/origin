@@ -1,5 +1,14 @@
 fieldFirst:
-    XpathValue:   xpath=//*[@id="root"]/div[2]/div/div[2]/div[1]/div/div/input
+    SendAmount:    xpath=//*[@id="root"]/div[2]/div/div[2]/div[1]/div/div/input
 
 textValues:
-    valueAssert:   12.12
+    valueAssert:   $120,000.50
+    valueThree:    $40,000.17
+    valueMonth:    You’re planning 3 monthly deposits to reach your $
+    zeroValue:     You’re planning 1 monthly deposits to reach your $0 goal by
+
+arrows:
+    rightPressing:  xpath=//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div
+
+pageElement:
+    totalAmountField: //*[@id="root"]/div[2]/div/div[2]/div[1]/div/div
