@@ -6,5 +6,3 @@ ${HOMEPAGE}                 http://qa-assignment.useorigin.com.s3-website-us-eas
 ${BROWSERHEADLESS}          headlesschrome
 ${BROWSER}                  chrome
 ${GENERAL_TIMEOUT}          50
-${INPUTVALUE}               12000050
-${INPUTLETTERS}             OneThousand

@@ -11,7 +11,7 @@ Access saving goal plan
 
 Set amount
     Wait Until Page Contains                Let's plan your saving goal.    ${GENERAL_TIMEOUT}
-    Input Text                              ${fieldFirst.SendAmount}        ${INPUTVALUE}
+    Input Text                              ${fieldFirst.SendAmount}        ${textValues.valueAmount}
     Wait Until Page Contains                ${textValues.valueAssert}       ${GENERAL_TIMEOUT}
 
 Reach goal by
@@ -25,7 +25,7 @@ Reach goal by
 
 Try to set letters to money
     Wait Until Element Is Visible           ${pageElement.totalAmountField}
-    Input Text                              ${fieldFirst.SendAmount}        ${INPUTLETTERS}
+    Input Text                              ${fieldFirst.SendAmount}        ${sendLetters.value}
 
 Try to input previous month
     ${date}=  Get Current Date              result_format=%B
@@ -40,4 +40,4 @@ Current month should be present
 
 Monthy amount will be zero
     Wait Until Page Contains                ${textValues.zeroValue}          ${GENERAL_TIMEOUT}
-    Element Should Not Be Visible           ${INPUTLETTERS}
+    Element Should Not Be Visible           ${sendLetters.value}
